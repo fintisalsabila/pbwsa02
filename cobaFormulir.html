@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bs46/css/bootstrap.min.css">
+        <!-- Latest compiled JavaScript -->
+        <script src="bs46/jquery-3.6.4.min.js"></script>
+        <script src="bs46/popper-1.16.1.min.js"></script>
+        <script src="bs46/js/bootstrap.min.js"></script>
+        <style>
+            table.table-striped tbody tr:nth-child(odd) {
+                background-color: lightgoldenrodyellow; 
+            }            
+
+            table.table-hover tbody tr:hover {
+                background-color: pink; 
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">STMI</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">            
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm-12 p-2">
+<h3>Formulir Pendaftaran Mahasiswa</h3>
+<form>
+<div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" placeholder="isi email"/>
+</div>
+<div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="isi password"/>
+</div>
+<div class="form-group">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" class="form-control" id="nama" placeholder="isi nama"/>
+</div>
+<div class="form-group">
+    <label for="tgl">Tanggal Lahir:</label>
+    <input type="date" class="form-control" id="tgl" placeholder="isi tgl lahir"/>
+</div>
+<div class="form-group">
+    <label for="umur">Umur:</label>
+    <input type="number" class="form-control" id="umur" placeholder="isi umur"/>
+</div>
+<div class="form-group">
+    Jenis Kelamin
+    <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="jk" 
+            value="P" checked>Pria
+        </label>
+    </div>    
+    <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="jk"
+          value="W" >Wanita
+        </label>
+    </div>    
+</div>
+<div class="form-group">
+    Unit Kegiatan Mahasiswa
+    <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" 
+            name="ukm" value="Foskomi">Foskomi
+        </label>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" 
+            name="ukm" value="FORM">FORM
+        </label>
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" 
+            name="ukm" value="HPA Tradyakala">HPA Tradyakala
+        </label>
+    </div>
+</div>
+<div class="form-group">
+    <label for="foto">Pas foto:</label>
+    <input type="file" class="form-control" id="foto" placeholder="upload pasfoto"/>
+</div>
+<div class="form-group">
+    <label for="deskripsi">Deskripsi diri:</label>
+    <textarea class="form-control" nums="5" cols="80" id="deskripsi"></textarea>
+</div>
+
+<div class="form-group">
+    <label for="prodi">Pilih jurusan:</label>
+    <select class="form-control" id="prodi">
+      <option value="TIO">Teknik Industri Otomotif</option>
+      <option value="TRO">Teknologi Rekayasa Otomotif</option>
+      <option value="SIIO" selected>Sistem Informasi Industri Otomotif</option>
+    </select>
+  </div>
+
+<button type="submit" class="btn btn-success">Daftar</button>
+<button type="reset" class="btn btn-danger">Reset</button>
+<button type="button" class="btn btn-primary">Tombol biasa</button>
+
+</form>
+              
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 p-1 border text-center">
+                    copyright &copy Ahmad Juniar - 2023
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
