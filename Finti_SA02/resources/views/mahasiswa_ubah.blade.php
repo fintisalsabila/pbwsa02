@@ -4,14 +4,14 @@
 <form method="post" action="/mhs/{{ $m->id }}">
 @csrf @method("PATCH")
 <div class="form-group">
-    <label for="nim">NIM:</label>
+    <label for="nim">Nomor Induk Mahasiswa (NIM):</label>
     <input type="number" class="form-control" id="nim" name="nim" 
-        value="{{ $m->nim }}" placeholder="isi NIM"/>
+        value="{{ $m->nim }}" placeholder="Masukkan NIM"/>
 </div>
 <div class="form-group">
     <label for="nama">Nama Lengkap:</label>
     <input type="text" class="form-control" id="nama" name="nama" 
-    value="{{ $m->nama }}" placeholder="isi nama"/>
+        value="{{ $m->nama }}" placeholder="Masukkan nama lengkap"/>
 </div>
 <button type="submit" class="btn btn-success">Ubah</button>
 <button type="button" class="btn btn-danger" 

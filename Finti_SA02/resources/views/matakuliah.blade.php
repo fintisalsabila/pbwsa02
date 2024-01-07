@@ -14,7 +14,7 @@
     <tbody>
         @foreach($mk as $i)
         <tr>
-            <td>{{ $i->kode }}</td>
+            <td>{{ $i->id }}</td>
             <td>{{ $i->nama }}</td>
             <td>{{ $i->sks }}</td>
             <td>

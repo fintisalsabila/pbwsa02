@@ -15,22 +15,22 @@
 <div class="form-group">
     <label for="name">Nama Lengkap:</label>
     <input type="text" class="form-control" id="name" name="name" 
-        value="{{ old('name') }}" placeholder="isi nama"/>
+        value="{{ old('name') }}" placeholder="Masukkan nama lengkap Anda"/>
 </div>
 <div class="form-group">
-    <label for="email">Email:</label>
+    <label for="email">Alamat Email:</label>
     <input type="text" class="form-control" id="email" name="email" 
-        value="{{ old('email') }}" placeholder="isi email"/>
+        value="{{ old('email') }}" placeholder="Masukkan alamat email Anda"/>
 </div>
 <div class="form-group">
     <label for="password">Password:</label>
     <input type="password" class="form-control" id="password" name="password" 
-        value="{{ old('password') }}" placeholder="ketik password"/>
+        value="{{ old('password') }}" placeholder="Ketik password Anda"/>
 </div>
 <div class="form-group">
-    <label for="password_confirmation">Password Confirmation:</label>
+    <label for="password_confirmation">Konfirmasi Password:</label>
     <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" 
-        value="{{ old('password_confirmation') }}" placeholder="ketik ulang password"/>
+        value="{{ old('password_confirmation') }}" placeholder="Ketik ulang password Anda"/>
 </div>
 <button type="submit" class="btn btn-success">Register</button>
 <button type="button" class="btn btn-danger" 

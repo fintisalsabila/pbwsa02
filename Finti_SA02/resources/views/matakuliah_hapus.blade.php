@@ -4,7 +4,7 @@
 <form method="post" action="/mk/{{ $m->id }}">
 @csrf @method("DELETE")
 <div class="form-group">
-    <label for="kode">Kode: {{ $m->kode }}</label>
+    <label for="kode">Kode: {{ $m->id }}</label>
 </div>
 <div class="form-group">
     <label for="nama">Nama: {{ $m->nama }}</label>

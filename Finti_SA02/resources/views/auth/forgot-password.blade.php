@@ -10,15 +10,15 @@
         Anda belum terdaftar di website ini
     </div>
 @endif
-<form method="post" action="{{ route('password.email') }}" placeholder="isi email untuk reset password">
+<form method="post" action="{{ route('password.email') }}" placeholder="Isi email untuk reset password">
 
 @csrf
 <div class="form-group">
-    <label for="email">Email:</label>
+    <label for="email">Masukkan Email untuk Reset Password:</label>
     <input type="text" class="form-control" id="email" name="email" 
-        value="{{ old('email') }}" placeholder="isi email"/>
+        value="{{ old('email') }}" placeholder="nama@example.com"/>
 </div>
-<button type="submit" class="btn btn-success">Send To Email</button>
+<button type="submit" class="btn btn-success">Kirim</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>
 </form>

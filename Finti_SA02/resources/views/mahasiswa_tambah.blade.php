@@ -13,25 +13,26 @@
 <form method="post" action="/mhs">
 @csrf
 <div class="form-group">
-    <label for="nim">NIM:</label>
+    <label for="nim">Nomor Induk Mahasiswa (NIM):</label>
     <input type="number" class="form-control" id="nim" name="nim" 
-        value="{{ old('nim') }}" placeholder="isi NIM"/>
+        value="{{ old('nim') }}" placeholder="Masukkan NIM"/>
     @error("nim") 
         <span class="text-danger">
-        {{ $message }}
+            {{ $message }}
         </span>
     @enderror
 </div>
 <div class="form-group">
     <label for="nama">Nama Lengkap:</label>
     <input type="text" class="form-control" id="nama" name="nama" 
-        value="{{ old('nama') }}" placeholder="isi nama"/>
+        value="{{ old('nama') }}" placeholder="Masukkan nama lengkap"/>
     @error("nama") 
         <span class="text-danger">
-        {{ $message }}
+            {{ $message }}
         </span>
     @enderror
 </div>
+
 <button type="submit" class="btn btn-success">Tambah</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>

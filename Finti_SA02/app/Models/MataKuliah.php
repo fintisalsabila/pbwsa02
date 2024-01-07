@@ -10,7 +10,7 @@ class MataKuliah extends Model
     use HasFactory;
     protected $table = "matakuliahs";
     protected $fillable = [
-        'kode', 'nama', 'sks'
+        'id', 'nama', 'sks'
     ];    
 }
 

@@ -18,7 +18,7 @@ class MkController extends Controller
     }
     public function tambah(Request $r) {
         MataKuliah::create([
-            'kode' => $r->kode,
+            'kode' => $r->id,
             'nama' => $r->nama,
             'sks' => $r->sks
         ]);
@@ -28,7 +28,7 @@ class MkController extends Controller
     public function ubah(Request $r, $id) {
         $m = MataKuliah::find($id);
         $m->update([
-            'kode' => $r->kode,
+            'kode' => $r->id,
             'nama' => $r->nama,
             'sks' => $r->sks
         ]);

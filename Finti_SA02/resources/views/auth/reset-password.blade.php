@@ -23,12 +23,12 @@
 <div class="form-group">
     <label for="password">Password:</label>
     <input type="password" class="form-control" id="password" name="password" 
-        value="{{ old('password') }}" placeholder="ketik password"/>
+        value="{{ old('password') }}" placeholder="Ketik password Anda"/>
 </div>
 <div class="form-group">
-    <label for="password_confirmation">Password Confirmation:</label>
+    <label for="password_confirmation">Konfirmasi Password:</label>
     <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" 
-        value="{{ old('password_confirmation') }}" placeholder="ketik ulang password"/>
+        value="{{ old('password_confirmation') }}" placeholder="Ketik ulang password Anda"/>
 </div>
 <button type="submit" class="btn btn-success">Register</button>
 <button type="button" class="btn btn-danger" 
