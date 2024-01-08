@@ -11,16 +11,21 @@
             <td>Kode</td>
             <td>Nama</td>
             <td>SKS</td>
+            <td>ID Dosen</td>
+            <td>Deskripsi</td>
         </tr>
         @foreach($mk as $i)
         <tr>
             <td>{{ $i->id }}</td>
             <td>{{ $i->nama }}</td>
             <td>{{ $i->sks }}</td>
+            <td>{{ $i->id_dosen }}</td>
+            <td>{{ $i->deskripsi }}</td>
         </tr>
         @endforeach
     </table>
 </body>
+
 </html>
 
 <!--1321046 - FINTI SASA SABILA-->

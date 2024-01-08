@@ -5,7 +5,7 @@
         @csrf
         <div class="form-group">
     <label for="kode">Kode Mata Kuliah:</label>
-    <input type="number" class="form-control" id="kode" name="kode" placeholder="Masukkan Kode Mata Kuliah" readonly/>
+    <input type="number" class="form-control" id="kode" name="kode" value="" readonly/>
 </div>
 <div class="form-group">
     <label for="nama">Nama Mata Kuliah:</label>
@@ -14,6 +14,14 @@
 <div class="form-group">
     <label for="sks">Jumlah SKS:</label>
     <input type="number" class="form-control" id="sks" name="sks" placeholder="Masukkan Jumlah SKS"/>
+</div>
+<div class="form-group">
+    <label for="id_dosen">ID Dosen:</label>
+    <input type="number" class="form-control" id="id_dosen" name="id_dosen" value="" placeholder="Masukkan ID Dosen"/>
+</div>
+<div class="form-group">
+    <label for="deskripsi">Deskripsi:</label>
+    <textarea class="form-control" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi">{{ $m->deskripsi }}</textarea>
 </div>
 
         <!-- Menambahkan script JavaScript untuk generate angka -->

@@ -5,21 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MataKuliah extends Model
+class Pegawai extends Model
 {
-    use HasFactory;
+    protected $table = 'pegawai';
 
-    protected $table = "matakuliahs";
-    
+    protected $primaryKey = 'id_pegawai';
+
     protected $fillable = [
-        'id', 'nama', 'sks', 'id_dosen', 'deskripsi',
+        'id_dosen',
+        'unit',
     ];
-    
-    // Assuming you have a relationship with the Dosen model
+
     public function dosen()
     {
         return $this->belongsTo(Dosen::class, 'id_dosen');
     }
 }
-
-//1321046 - FINTI SASA SABILA

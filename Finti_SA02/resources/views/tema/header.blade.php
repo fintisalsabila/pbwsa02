@@ -13,6 +13,13 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="/mhs">Mahasiswa</a></li>
             <li class="nav-item"><a class="nav-link" href="/mk">Matakuliah</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dosen">Dosen</a>
+            </li> 
+            <!--<li class="nav-item">
+                <a class="nav-link" href="/pegawai">Pegawai</a>
+            </li>-->
+
 
             <!-- Authenticated User Dropdown -->
             @auth

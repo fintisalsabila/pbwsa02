@@ -12,6 +12,12 @@
 <div class="form-group">
     <label for="sks">SKS: {{ $m->sks }}</label>
 </div>
+<div class="form-group">
+    <label for="id_dosen">ID Dosen: {{ $m->id_dosen }}</label>
+</div>
+<div class="form-group">
+    <label for="deskripsi">Deskripsi: {{ $m->deskripsi }}</label>
+</div>
 <button type="submit" class="btn btn-success">Hapus</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>

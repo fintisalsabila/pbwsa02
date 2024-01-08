@@ -5,10 +5,12 @@
 <table class="table table-striped table-hover">
     <thead>
         <tr>
-        <th>Kode</th>
-        <th>Nama</th>
-        <th>SKS</th>
-        <th>Aksi</th>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>SKS</th>
+            <th>ID Dosen</th>
+            <th>Deskripsi</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -17,9 +19,11 @@
             <td>{{ $i->id }}</td>
             <td>{{ $i->nama }}</td>
             <td>{{ $i->sks }}</td>
+            <td>{{ $i->id_dosen }}</td>
+            <td>{{ $i->deskripsi }}</td>
             <td>
-            <a href="/mk/ubah/{{ $i->id }}">Ubah</a> |
-            <a href="/mk/hapus/{{ $i->id }}">Hapus</a>
+                <a href="/mk/ubah/{{ $i->id }}">Ubah</a> |
+                <a href="/mk/hapus/{{ $i->id }}">Hapus</a>
             </td>
         </tr>
         @endforeach

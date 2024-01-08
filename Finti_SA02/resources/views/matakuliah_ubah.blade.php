@@ -18,6 +18,16 @@
     <input type="text" class="form-control" id="sks" name="sks" 
         value="{{ $m->sks }}" placeholder="Masukkan Jumlah SKS"/>
 </div>
+<div class="form-group">
+    <label for="id_dosen">ID Dosen:</label>
+    <input type="number" class="form-control" id="id_dosen" name="id_dosen" 
+        value="{{ $m->id_dosen }}" placeholder="Masukkan ID Dosen"/>
+</div>
+<div class="form-group">
+    <label for="deskripsi">Deskripsi:</label>
+    <textarea class="form-control" id="deskripsi" name="deskripsi" 
+        placeholder="Masukkan Deskripsi">{{ $m->deskripsi }}</textarea>
+</div>
 <button type="submit" class="btn btn-success">Ubah</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>

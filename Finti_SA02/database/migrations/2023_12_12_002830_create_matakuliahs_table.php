@@ -17,7 +17,12 @@ class CreateMatakuliahsTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('sks');
+            $table->integer('id_dosen');
+            $table->text('deskripsi')->nullable();
             $table->timestamps();
+        
+            // Foreign key constraint to link with the 'dosens' table.
+            $table->foreign('id_dosen')->references('id')->on('dosens')->onDelete('cascade');
         });
     }
 
