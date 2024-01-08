@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="/mhs">Mahasiswa</a></li>
-            <li class="nav-item"><a class="nav-link" href="/mk">Matakuliah</a></li>
+            <li class="nav-item"><a class="nav-link" href="/mk">Mata Kuliah</a></li>
             <li class="nav-item">
                 <a class="nav-link" href="/dosen">Dosen</a>
             </li> 

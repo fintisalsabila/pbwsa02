@@ -1,6 +1,6 @@
 @extends("tema.layout")
 @section("isi")
-<h3>Ubah Data Matakuliah</h3>
+<h3>Ubah Data Dosen</h3>
     <form method="post" action="/dosen/{{ $dosen->id_dosen }}">
     @csrf @method("PATCH")
         <div class="form-group">

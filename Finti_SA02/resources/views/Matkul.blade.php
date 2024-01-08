@@ -11,7 +11,7 @@
             <td>Kode</td>
             <td>Nama</td>
             <td>SKS</td>
-            <td>ID Dosen</td>
+            <td>Nama Dosen</td>
             <td>Deskripsi</td>
         </tr>
         @foreach($mk as $i)

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\MataKuliah;
+use App\Models\Dosen;
 
 class MkController extends Controller
 {
@@ -54,9 +55,11 @@ public function ubah(Request $r, $id)
     }
 
     public function formTambah() {
-        $m = new MataKuliah(); // Instantiate a new instance of your MataKuliah model
-        return view("matakuliah_tambah", ['m' => $m]);
+        $dosens = Dosen::all(); // Assuming Dosen is your model for the dosen table
+        $m = new MataKuliah();
+        return view("matakuliah_tambah", ['m' => $m, 'dosens' => $dosens]);
     }
+    
     
     public function formUbah($id) {
         $m = MataKuliah::find($id);

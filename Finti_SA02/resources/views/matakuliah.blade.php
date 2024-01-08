@@ -8,7 +8,7 @@
             <th>Kode</th>
             <th>Nama</th>
             <th>SKS</th>
-            <th>ID Dosen</th>
+            <th>Nama Dosen</th>
             <th>Deskripsi</th>
             <th>Aksi</th>
         </tr>
