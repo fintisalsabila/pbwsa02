@@ -1,6 +1,7 @@
 @extends("tema.layout")
 @section("isi")
-<h3>SIGN UP</h3>
+<div style="text-align: center;">
+<h3 >SIGN UP</h3>
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -10,7 +11,9 @@
         </ul>
     </div>
 @endif
-<form method="post" action="{{ route('register') }}">
+</div>
+<br>
+<form method="post" action="{{ route('register') }}" class="mx-auto" style="max-width: 400px;">
 @csrf
 <div class="form-group">
     <label for="name">Nama Lengkap:</label>
@@ -32,6 +35,17 @@
     <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" 
         value="{{ old('password_confirmation') }}" placeholder="Ketik ulang password Anda"/>
 </div>
+
+<div class="form-group">
+    <label for="name">Role / Hak Akses</label><br>
+    <div class="form-check form-check-inline">
+    <input type="radio" id="role" name="role" 
+        value="Manajer" class="form-check-input" />Manajer&nbsp;
+        <input type="radio" id="role" name="role" 
+        value="Staf" class="form-check-input" checked />Staf
+    </div>    
+</div>
+
 <button type="submit" class="btn btn-success">Register</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>

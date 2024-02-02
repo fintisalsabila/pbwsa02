@@ -1,6 +1,7 @@
 @extends("tema.layout")
 @section("isi")
-<h3>LOGIN</h3>
+<div style="text-align: center;">
+<h3>SIGN IN</h3>
 @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
@@ -10,7 +11,9 @@
         </ul>
     </div>
 @endif
-<form method="post" action="{{ route('login')}}">
+</div>
+<br>
+<form method="post" action="{{ route('login')}}" class="mx-auto" style="max-width: 400px;">
 @csrf
 <div class="form-group">
     <label for="email">Alamat Email:</label>
@@ -25,6 +28,6 @@
 <button type="submit" class="btn btn-success">Login</button>
 <button type="button" class="btn btn-danger" 
     onclick="history.go(-1)">Batal</button>
-<a href="{{ route('password.request') }}">Forgot Password</a>
+<a href="{{ route('password.request') }}">Forgot Password ?</a>
 </form>
 @endsection

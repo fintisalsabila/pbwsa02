@@ -1,5 +1,6 @@
 @extends("tema.layout")
 @section("isi")
+<div style="text-align: center;">
 <h3>FORGOT PASSWORD</h3>
 @if (session('status'))
     <div class="alert alert-success">
@@ -10,7 +11,8 @@
         Anda belum terdaftar di website ini
     </div>
 @endif
-<form method="post" action="{{ route('password.email') }}" placeholder="Isi email untuk reset password">
+</div>
+<form method="post" action="{{ route('password.email') }}" placeholder="Isi email untuk reset password" class="mx-auto" style="max-width: 400px;">
 
 @csrf
 <div class="form-group">

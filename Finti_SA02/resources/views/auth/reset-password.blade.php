@@ -1,5 +1,6 @@
 @extends("tema.layout")
 @section("isi")
+<div style="text-align: center;">
 <h3>Reset Password New</h3>
 @if ($errors->any())
     <div class="alert alert-danger">
@@ -10,7 +11,8 @@
         </ul>
     </div>
 @endif
-<form method="post" action="{{ route('password.update') }}">
+</div>
+<form method="post" action="{{ route('password.update') }}" class="mx-auto" style="max-width: 400px;">
 @csrf
 <input type="hidden" name="token" 
     value="{{$r->route('token') }}">
